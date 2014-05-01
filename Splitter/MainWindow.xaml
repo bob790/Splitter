@@ -1,0 +1,28 @@
+﻿<Window x:Class="Splitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="txtInputDir" HorizontalAlignment="Left" Height="23" Margin="46,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtOutputDir1" HorizontalAlignment="Left" Height="23" Margin="46,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="txtOutputDir2" HorizontalAlignment="Left" Height="23" Margin="46,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205"/>
+        <Button x:Name="btnInputDir" Content="Browse" HorizontalAlignment="Left" Margin="256,60,0,0" VerticalAlignment="Top" Width="75" Click="btnInputDir_Click"/>
+        <Button x:Name="btnOutputDir1" Content="Browse" HorizontalAlignment="Left" Margin="256,120,0,0" VerticalAlignment="Top" Width="75" Click="btnOutputDir1_Click"/>
+        <Button x:Name="btnOutputDir2" Content="Browse" HorizontalAlignment="Left" Margin="256,180,0,0" VerticalAlignment="Top" Width="75" Click="btnOutputDir2_Click"/>
+        <Button x:Name="btnBigRed" Content="GO!" HorizontalAlignment="Left" Margin="336,61,0,0" VerticalAlignment="Top" Width="171" Height="143" Click="btnBigRed_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="Red" Offset="0.51"/>
+                    <GradientStop Color="Red" Offset="0.517"/>
+                    <GradientStop Color="#FF4F0000" Offset="1"/>
+                    <GradientStop Color="#FF550000" Offset="0.007"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Input:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Out1:" HorizontalAlignment="Left" Margin="8,119,0,0" VerticalAlignment="Top"/>
+        <Label Content="Out2:" HorizontalAlignment="Left" Margin="8,178,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
